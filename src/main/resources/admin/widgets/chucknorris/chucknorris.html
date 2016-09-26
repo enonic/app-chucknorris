@@ -1,0 +1,18 @@
+<html>
+<head>
+    <link rel="stylesheet" data-th-href="${portal.assetUrl({'_path=css/chucknorris.css'})}"/>
+</head>
+<body>
+<main class="chucknorris-widget">
+    <p data-th-if="${errorExists}" class="chucknorris-joke">Error: Could not retrieve Chuck Norris fact</p>
+
+    <p data-th-if="${!errorExists}" class="chucknorris-joke" data-th-text="${joke}">Joke</p>
+
+    <img class="chucknorris-silhouette" data-th-src="${portal.assetUrl({'_path=img/chucknorris.png'})}" alt="Chuck Norris silhouette"/>
+</main>
+<footer class="chucknorris-footer">
+    Data from <a class="chucknorris-credit" href="http://www.icndb.com/">The Internet Chuck Norris Database</a>
+</footer>
+</body>
+</html>
+

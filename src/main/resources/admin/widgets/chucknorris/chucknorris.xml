@@ -1,0 +1,6 @@
+<widget>
+    <display-name>Chuck Norris</display-name>
+    <interfaces>
+        <interface>contentstudio.detailpanel</interface>
+    </interfaces>
+</widget>

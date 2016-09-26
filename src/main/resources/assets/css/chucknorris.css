@@ -1,0 +1,19 @@
+.chucknorris-widget {
+    padding: 10px;
+}
+
+.chucknorris-joke {
+    margin-bottom: 30px;
+}
+
+.chucknorris-footer {
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.chucknorris-silhouette {
+    width: 200px;
+    max-width: 75%;
+    margin: 0 auto;
+    display: block;
+}
