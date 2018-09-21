@@ -6,7 +6,7 @@ plugins {
 
 app {
     name = project.appName
-    displayName = project.displayName
+    displayName = 'Chuck Norris'
     vendorName = 'Enonic AS'
     vendorUrl = 'http://enonic.com'
     systemVersion = "${xpVersion}"
