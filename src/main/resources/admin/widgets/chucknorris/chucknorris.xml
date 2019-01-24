@@ -1,5 +1,6 @@
 <widget>
     <display-name>Chuck Norris</display-name>
+    <description>A Chuck Norris fact widget</description> 
     <interfaces>
         <interface>contentstudio.detailpanel</interface>
     </interfaces>
