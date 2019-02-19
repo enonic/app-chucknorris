@@ -1,6 +1,6 @@
 var libs = {
-    thymeleaf: require('/lib/xp/thymeleaf'),
-    httpClient: require('/lib/xp/http-client')
+    thymeleaf: require('/lib/thymeleaf'),
+    httpClient: require('/lib/http-client')
 };
 
 exports.get = handleGet;
