@@ -1,3 +1,3 @@
-https://market.enonic.com/vendors/enonic/com.enonic.app.chucknorris
+https://market.enonic.com/vendors/enonic/chuck-norris-widget
 
 Data retrieved from http://www.icndb.com/
