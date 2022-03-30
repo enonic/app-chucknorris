@@ -8,7 +8,7 @@ app {
     name = project.appName
     displayName = 'Chuck Norris'
     vendorName = 'Enonic AS'
-    vendorUrl = 'http://enonic.com'
+    vendorUrl = 'https://enonic.com'
     systemVersion = "${xpVersion}"
 }
 
