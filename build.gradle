@@ -13,9 +13,8 @@ app {
 }
 
 dependencies {
-    include "com.enonic.xp:lib-portal:${xpVersion}"
     include 'com.enonic.lib:lib-thymeleaf:2.0.2'
-    include 'com.enonic.lib:lib-http-client:3.1.0'
+    include 'com.enonic.lib:lib-http-client:3.2.1'
 }
 
 repositories {
