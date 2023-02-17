@@ -34,8 +34,8 @@ function handleGet(req) {
     }
 
     function getJoke() {
-        var json = getJSON('http://api.icndb.com/jokes/random?escape=javascript');
-        return json.value.joke;
+        var json = getJSON('https://api.chucknorris.io/jokes/random');
+        return json.value;
     }
 
     function getJSON(url) {
