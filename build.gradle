@@ -14,7 +14,7 @@ app {
 
 dependencies {
     include 'com.enonic.lib:lib-thymeleaf:2.0.2'
-    include 'com.enonic.lib:lib-http-client:3.2.1'
+    include 'com.enonic.lib:lib-http-client:3.2.2'
 }
 
 repositories {
