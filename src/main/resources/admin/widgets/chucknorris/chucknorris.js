@@ -1,4 +1,4 @@
-var libs = {
+const libs = {
     thymeleaf: require('/lib/thymeleaf'),
     httpClient: require('/lib/http-client')
 };
@@ -6,15 +6,13 @@ var libs = {
 exports.get = handleGet;
 
 function handleGet(req) {
-
-    var view = resolve('chucknorris.html');
-    var model = createModel(req);
+    const view = resolve('chucknorris.html');
+    const model = createModel(req);
 
     function createModel(req) {
         var model = {};
 
         model.errors = [];
-
 
         try {
             model.joke = getJoke();
@@ -29,17 +27,16 @@ function handleGet(req) {
             log.debug(model.errors);
         }
 
-
         return model;
     }
 
     function getJoke() {
-        var json = getJSON('https://api.chucknorris.io/jokes/random');
+        const json = getJSON('https://api.chucknorris.io/jokes/random');
         return json.value;
     }
 
     function getJSON(url) {
-        var response = libs.httpClient.request({
+        const response = libs.httpClient.request({
             url: url,
             method: 'GET',
             connectionTimeout: 5000,
@@ -48,7 +45,7 @@ function handleGet(req) {
         });
 
         if (response.status !== 200) {
-            throw 'Could not retrieve JSON url (' + response.status + ')';
+            throw `Could not retrieve JSON url (${response.status})`;
         }
         return JSON.parse(response.body);
     }
