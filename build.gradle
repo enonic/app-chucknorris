@@ -10,15 +10,17 @@ app {
     vendorName = 'Enonic AS'
     vendorUrl = 'https://enonic.com'
     systemVersion = "[7,9)"
-    scriptEngine = "GraalJS"
+    //scriptEngine = "GraalJS"
 }
 
 sourceCompatibility = JavaVersion.VERSION_11
 targetCompatibility = sourceCompatibility
 
 dependencies {
-    include 'com.enonic.lib:lib-thymeleaf:2.1.1'
+    include 'com.enonic.lib:lib-mustache:2.1.1'
     include 'com.enonic.lib:lib-http-client:3.2.2'
+    include "com.enonic.lib:lib-static:2.1.1"
+    include "com.enonic.lib:lib-router:3.2.0"
 }
 
 repositories {
