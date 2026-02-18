@@ -1,0 +1,4 @@
+displayName: "Chuck Norris"
+description: "A Chuck Norris fact widget"
+interfaces:
+  - "contentstudio.contextpanel"
