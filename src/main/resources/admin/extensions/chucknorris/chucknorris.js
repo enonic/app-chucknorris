@@ -6,7 +6,7 @@ const libs = {
 
 const router = require('/lib/router')()
 
-const BASE_PATH = `/${app.name}/chucknorris`;
+const BASE_PATH = `/${app.name}:chucknorris`;
 const STATIC_BASE_PATH = `${BASE_PATH}/_static`;
 
 exports.all = function (req) {

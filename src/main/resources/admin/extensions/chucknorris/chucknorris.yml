@@ -2,3 +2,9 @@ displayName: "Chuck Norris"
 description: "A Chuck Norris fact widget"
 interfaces:
   - "contentstudio.contextpanel"
+  - "admin.dashboard"
+config:
+  width: "small"
+  style: "custom"
+  height: "small"
+  order: "1"
