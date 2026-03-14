@@ -1,19 +1,33 @@
-.chucknorris-widget {
+#extensions-chucknorris {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
     padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .chucknorris-joke {
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    flex-shrink: 0;
 }
 
 .chucknorris-footer {
     font-size: 0.5em;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .chucknorris-silhouette {
-    width: 200px;
-    max-width: 75%;
-    margin: 0 auto;
+    flex-shrink: 1;
+    min-height: 0;
+    max-width: min(200px, 75%);
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     display: block;
+    align-self: center;
 }

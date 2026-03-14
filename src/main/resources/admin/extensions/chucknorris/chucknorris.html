@@ -1,17 +1,17 @@
-<widget>
+<div id="extensions-chucknorris">
     <link rel="stylesheet" href="{{css}}"/>
-    <div class="chucknorris-widget">
-        {{#errorExists}}
-        <p class="chucknorris-joke">Error: Could not retrieve Chuck Norris fact</p>
-        {{/errorExists}}
 
-        {{^errorExists}}
-        <p class="chucknorris-joke">{{joke}}</p>
-        {{/errorExists}}
+    {{#errorExists}}
+    <p class="chucknorris-joke">Error: Could not retrieve Chuck Norris fact</p>
+    {{/errorExists}}
 
-        <img class="chucknorris-silhouette" src="{{image}}" alt="Chuck Norris silhouette"/>
-    </div>
+    {{^errorExists}}
+    <p class="chucknorris-joke">{{joke}}</p>
+    {{/errorExists}}
+
+    <img class="chucknorris-silhouette" src="{{image}}" alt="Chuck Norris silhouette"/>
+
     <p class="chucknorris-footer">
-        Data from <a class="chucknorris-credit" href="https://api.chucknorris.io/">The Internet Chuck Norris Database</a>
+        <a class="chucknorris-credit" href="https://api.chucknorris.io/">The Internet Chuck Norris Database</a>
     </p>
-</widget>
+</div>

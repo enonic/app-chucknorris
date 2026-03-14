@@ -5,6 +5,5 @@ interfaces:
   - "admin.dashboard"
 config:
   width: "small"
-  style: "custom"
-  height: "small"
+  height: "medium"
   order: "1"
