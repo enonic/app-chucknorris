@@ -1,14 +1,10 @@
 plugins {
     id 'maven-publish'
-    id 'com.enonic.xp.app' version '4.0.0-A2'
+    id 'com.enonic.xp.app' version '4.0.0-A3'
     id 'com.enonic.defaults' version '2.1.6'
 }
 
 app {
-    name = project.appName
-    displayName = 'Chuck Norris'
-    vendorName = 'Enonic AS'
-    vendorUrl = 'https://enonic.com'
     systemVersion = "[8,9)"
     //scriptEngine = "GraalJS"
 }

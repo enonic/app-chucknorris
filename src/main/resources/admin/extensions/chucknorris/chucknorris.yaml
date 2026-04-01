@@ -1,4 +1,5 @@
-displayName: "Chuck Norris"
+kind: AdminExtension
+title: "Chuck Norris"
 description: "A Chuck Norris fact widget"
 interfaces:
   - "contentstudio.contextpanel"

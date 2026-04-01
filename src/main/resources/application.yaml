@@ -1,0 +1,5 @@
+kind: Application
+title: "Chuck Norris"
+description: "A Chuck Norris fact widget"
+vendorName: Enonic AS
+vendorUrl: https://enonic.com
