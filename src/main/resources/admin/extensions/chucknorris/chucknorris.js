@@ -6,14 +6,13 @@ const libs = {
 
 const router = require('/lib/router')()
 
-const BASE_PATH = `/${app.name}:chucknorris`;
-const STATIC_BASE_PATH = `${BASE_PATH}/_static`;
+const STATIC_BASE_PATH = '/_static';
 
 exports.all = function (req) {
     return router.dispatch(req);
 };
 
-router.get(`${BASE_PATH}`, (req) => {
+router.get('', (req) => {
     const view = resolve('chucknorris.html');
     const model = createModel(req);
 

@@ -1,4 +1,4 @@
-<div id="extensions-chucknorris">
+<div id="widget-chucknorris">
     <link rel="stylesheet" href="{{css}}"/>
 
     {{#errorExists}}
@@ -9,7 +9,7 @@
     <p class="chucknorris-joke">{{joke}}</p>
     {{/errorExists}}
 
-    <img class="chucknorris-silhouette" src="{{image}}" alt="Chuck Norris silhouette"/>
+    <span class="chucknorris-silhouette" role="img" aria-label="Chuck Norris silhouette" style="--chucknorris-silhouette-url: url('{{image}}')"></span>
 
     <p class="chucknorris-footer">
         <a class="chucknorris-credit" href="https://api.chucknorris.io/">The Internet Chuck Norris Database</a>
