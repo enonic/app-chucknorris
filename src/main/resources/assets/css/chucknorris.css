@@ -1,4 +1,4 @@
-#extensions-chucknorris {
+#widget-chucknorris {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -6,28 +6,42 @@
     padding: 10px;
     overflow: hidden;
     box-sizing: border-box;
+    color: var(--dashboard-text-primary);
 }
 
 .chucknorris-joke {
     margin-top: 0;
     margin-bottom: 20px;
     flex-shrink: 0;
+    color: var(--dashboard-text-primary);
 }
 
 .chucknorris-footer {
     font-size: 0.5em;
     text-align: center;
     flex-shrink: 0;
+    color: var(--dashboard-text-secondary);
+}
+
+.chucknorris-credit {
+    color: var(--dashboard-text-secondary);
 }
 
 .chucknorris-silhouette {
-    flex-shrink: 1;
+    flex: 1 1 auto;
     min-height: 0;
-    max-width: min(200px, 75%);
+    width: min(200px, 75%);
     max-height: 200px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+    aspect-ratio: 941 / 940;
     display: block;
     align-self: center;
+    background-color: var(--dashboard-text-secondary, currentColor);
+    mask-image: var(--chucknorris-silhouette-url);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: var(--chucknorris-silhouette-url);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
 }

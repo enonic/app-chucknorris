@@ -7,4 +7,5 @@ interfaces:
 config:
   width: "small"
   height: "medium"
-  order: "1"
+  header: false
+  order: 100
