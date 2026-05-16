@@ -1,0 +1,11 @@
+[versions]
+http-client = "4.0.0-SNAPSHOT"
+mustache = "2.1.1"
+router = "4.0.0-SNAPSHOT"
+static = "3.0.0-SNAPSHOT"
+
+[libraries]
+lib-http-client = { module = "com.enonic.lib:lib-http-client", version.ref = "http-client" }
+lib-mustache = { module = "com.enonic.lib:lib-mustache", version.ref = "mustache" }
+lib-router = { module = "com.enonic.lib:lib-router", version.ref = "router" }
+lib-static = { module = "com.enonic.lib:lib-static", version.ref = "static" }

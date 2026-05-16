@@ -10,10 +10,10 @@ app {
 }
 
 dependencies {
-    include 'com.enonic.lib:lib-mustache:2.1.1'
-    include 'com.enonic.lib:lib-http-client:4.0.0-SNAPSHOT'
-    include "com.enonic.lib:lib-static:3.0.0-SNAPSHOT"
-    include "com.enonic.lib:lib-router:4.0.0-SNAPSHOT"
+    include libs.lib.mustache
+    include libs.lib.http.client
+    include libs.lib.static
+    include libs.lib.router
 }
 
 repositories {
