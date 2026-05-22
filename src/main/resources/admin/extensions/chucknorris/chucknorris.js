@@ -66,14 +66,9 @@ router.get('', (req) => {
     };
 });
 
-router.get(`${STATIC_BASE_PATH}/{path:.*}`, (request) => {
-    return libs.static.requestHandler(
-        request,
-        {
-            cacheControl: () => libs.static.RESPONSE_CACHE_CONTROL.SAFE,
-            index: false,
-            root: '/assets',
-            relativePath: libs.static.mappedRelativePath(STATIC_BASE_PATH),
-        }
-    );
-});
+router.get(`${STATIC_BASE_PATH}/{path:.*}`, (request) => libs.static.requestHandler(request, {
+    cacheControl: () => libs.static.RESPONSE_CACHE_CONTROL.SAFE,
+    index: false,
+    root: '/assets',
+    relativePath: (req) => req.pathParams.path,
+}));
