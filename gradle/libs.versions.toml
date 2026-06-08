@@ -1,8 +1,8 @@
 [versions]
-http-client = "4.0.0-SNAPSHOT"
-mustache = "3.0.0-SNAPSHOT"
-router = "4.0.0-SNAPSHOT"
-static = "3.0.0-SNAPSHOT"
+http-client = "4.0.0-B1"
+mustache = "3.0.0-B1"
+router = "4.0.0-B1"
+static = "3.0.0"
 
 [libraries]
 lib-http-client = { module = "com.enonic.lib:lib-http-client", version.ref = "http-client" }
