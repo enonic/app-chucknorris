@@ -6,7 +6,7 @@ plugins {
 
 app {
     systemVersion = "[8,9)"
-    //scriptEngine = "GraalJS"
+    scriptEngine = "GraalJS"
 }
 
 dependencies {
