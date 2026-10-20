@@ -1,0 +1,8 @@
+kind: "API"
+title: "Chuck Norris joke"
+description: "A Chuck Norris joke and who asked for it. Demo for XP-issued bearer tokens (device login)."
+allow:
+  - "role:system.admin"
+mount:
+  - "web"
+  - "management"
