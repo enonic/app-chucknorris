@@ -1,0 +1,8 @@
+kind: "API"
+title: "Chuck Norris fact"
+description: "A Chuck Norris fact. Demo for XP-issued bearer tokens (device login)."
+allow:
+  - "role:system.admin"
+mount:
+  - "web"
+  - "management"
