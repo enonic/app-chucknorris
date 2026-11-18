@@ -20,3 +20,13 @@ repositories {
     mavenCentral()
     xp.enonicRepo('dev')
 }
+
+tasks.register('testMcp', Exec) {
+    group = 'verification'
+    description = 'Tests the MCP fact contribution with Node.js 24 or newer.'
+    commandLine 'node', '--test', 'src/test/js/chucknorris.test.cjs'
+}
+
+tasks.named('check') {
+    dependsOn tasks.named('testMcp')
+}

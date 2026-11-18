@@ -1,0 +1,20 @@
+kind: MCP
+tools:
+  - name: fact
+    title: Chuck Norris fact
+    description: Get a random Chuck Norris fact from the public chucknorris.io API. Facts may contain adult language.
+    inputSchema:
+      type: object
+      properties: {}
+      additionalProperties: false
+    outputSchema:
+      type: object
+      properties:
+        fact:
+          type: string
+      required: [fact]
+      additionalProperties: false
+    annotations:
+      readOnlyHint: true
+      idempotentHint: false
+      openWorldHint: true
